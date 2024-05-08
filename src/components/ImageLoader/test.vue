@@ -10,7 +10,6 @@ export default {
     },
     data () {
         return {
-            // src: "src",
             src: "https://www.baidu.com/img/baidu_jgylogo3.gif",
             placeholder:"https://www.baidu.com/img/baidu_jgylogo3.gif"
         }
