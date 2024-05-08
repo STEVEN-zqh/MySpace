@@ -17,7 +17,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .avater-img{
     border-radius: 50%;
     object-fit: cover;
