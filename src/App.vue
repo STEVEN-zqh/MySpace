@@ -3,6 +3,7 @@
     <h1>app</h1>
     <Avatar url="http://120.26.131.204/static/upload/2024-3-13-12-55-24-22-832ff.png" :size="100"/>
     <Icon type="qq"/>
+    <Icon type="qq"/>
     <Pager :total="total" :current="current" @change="handleChangPager($event)"/> 
   </div>
 </template>
