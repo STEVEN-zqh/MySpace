@@ -1,7 +1,7 @@
 <template>
     <div class="empty-contoiner">
         <Icon type="empty"/>
-        <h1>{{text}}</h1>
+        <p>{{text}}</p>
     </div>
 </template>
 
@@ -21,6 +21,15 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="less" scoped>
+@import "~@/styles/mixin.less";
+@import "~@/styles/var.less";
+.empty-contoiner{
+    .self-center();
+    color:@gray;
+    text-align: center;
+}
+.icon-container{
+    font-size: 72px;
+}
 </style>
