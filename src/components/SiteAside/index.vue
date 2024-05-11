@@ -1,11 +1,11 @@
 <template>
   <div class="site-aside-container">
     <Avatar url="http://mdrs.yuanjin.tech/FgMwAPYq17So9nwVH44ltDHo7u3c" />
-    <h1 class="title">龙傲天的小窝</h1>
+    <h1 class="title">浩浩的猫窝</h1>
     <Menu />
     <Contact />
     <p class="footer">
-      黑ICP备17001719号
+      赣ICP备8888888号
     </p>
   </div>
 </template>
