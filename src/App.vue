@@ -6,7 +6,9 @@
           <SiteAside />
         </div>
       </template>
-      <template #default> 中间主区域 </template>
+      <template #default>
+        <router-view/>
+      </template>
     </Layout>
   </div>
 </template>
