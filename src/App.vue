@@ -1,41 +1,32 @@
 <template>
-  <div id="appp">
-    <h1>app</h1>
-    <Avatar url="http://120.26.131.204/static/upload/2024-3-13-12-55-24-22-832ff.png" :size="100"/>
-    <Icon type="qq"/>
-    <Icon type="qq"/>
-    <Pager :total="total" :current="current" @change="handleChangPager($event)"/> 
-    <Pager :total="total" :current="current" @change="handleChangPager($event)"/> 
+  <div class="app-container">
+    <Layout>
+      <template #left>
+        <div class="aside">
+          <SiteAside />
+        </div>
+      </template>
+      <template #default> 中间主区域 </template>
+    </Layout>
   </div>
 </template>
 <script>
-import Avatar from "./components/Avatar"
-import Icon from "./components/Icon"
-import Pager from "./components/Pager"
+import Layout from "./components/Layout";
+import SiteAside from "./components/SiteAside";
 export default {
   components: {
-    Avatar,
-    Icon,
-    Pager,
+    Layout,
+    SiteAside,
   },
-  data () {
-    return {
-      current:1,
-      total:302,
-    }
-  },
-  methods: {
-    handleChangPager(n){
-      console.log('sss');
-      
-      this.current = n;
-    }
-  },
-}
+};
 </script>
-<style scoped>
-.iconfont{
-  color: rgb(0, 255, 128);
-  font-size: 24px;
+<style scoped lang="less">
+@import "~@/styles/mixin.less";
+.app-container {
+  .self-fill(fixed);
+}
+.aside {
+  width: 250px;
+  height: 100%;
 }
 </style>

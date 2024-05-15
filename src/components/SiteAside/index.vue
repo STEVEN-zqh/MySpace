@@ -36,13 +36,11 @@ export default {
 }
 .avatar-container {
   margin: 0 auto;
-  width: 100px;
-  height: 100px;
+  
 }
 .footer {
   text-align: center;
   font-size: 12px;
-  color: @lightWords;
 }
 .title {
   font-size: 1.2em;
